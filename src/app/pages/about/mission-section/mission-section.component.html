@@ -1,4 +1,11 @@
-<p>
-  mission-section works!
-</p>
+<h1>about</h1>
 <app-main-button></app-main-button>
+
+<hr>
+
+<ul>
+  <li *ngFor="let user of Users">
+      <p>{{ user.name}}</p><br>
+      <p>{{ user.age}}</p>
+  </li>
+</ul>

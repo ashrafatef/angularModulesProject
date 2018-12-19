@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from 'src/app/services/users/users.service';
 
 @Component({
   selector: 'app-mission-section',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MissionSectionComponent implements OnInit {
 
-  constructor() { }
+  Users : {name : string , age : number} [] = [];
+  constructor(private userServices : UsersService) { }
 
   ngOnInit() {
+    this.Users = this.userServices.UsersList ;
   }
 
 }
