@@ -38,7 +38,7 @@ export class UserAuthService {
   }
 
   getToken(){
-    return this.token ;
+    return localStorage.getItem('token') ;
   }
 
   isAuthenticated(){

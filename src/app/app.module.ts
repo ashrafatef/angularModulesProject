@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule , HeaderComponent } from './components';
 import { ServicesModule } from './services/services.module';
+import { SharedModule } from './shared/shared.module';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -37,7 +38,8 @@ export function createTranslateLoader(http: HttpClient) {
   
       }
   
-     })
+     }),
+     SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
