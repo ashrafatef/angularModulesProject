@@ -18,12 +18,5 @@ import { HttpClientModule } from '@angular/common/http';
   ]
 })
 export class ServicesModule {
-  // static forRoot(): ModuleWithProviders {
-  //   return {
-  //     ngModule: ServicesModule,
-  //     providers: [ UsersService ,
-  //       UserAuthService,
-  //       AuthGuardService ]
-  //   };
-  // }
+
  }

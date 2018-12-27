@@ -1,14 +1,27 @@
 <div class="container">
-  <div class="row">
+  <div class="row add-user">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <input type="text" #serverName>
-      <!-- <button class="btn btn-primary" (click)="onAddServer(serverName.value)">Add Server</button> -->
-      <br><br>
-      <button class="btn btn-primary" (click)="onSave()">add User</button>
-      <hr>
-      <ul class="list-group" *ngFor="let server of servers">
-        <li class="list-group-item">{{ server.name }} (ID: {{ server.id }})</li>
-      </ul>
+      <input type="text" class="form-control username" #serverName>
+      <button class="btn btn-primary add-user-btn" (click)="onAddServer(serverName.value)">{{'ADDUSER' | translate}} </button>
     </div>
+  </div>
+  <hr>
+  <div class="row">
+      <div >
+          <button class="btn btn-primary" (click)="getAllUsers()">{{'SHOWALLUSERS' | translate}}</button>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <div>
+            <ul *ngFor="let user of users">
+                <li>
+                  {{user.name}}
+                  {{user.age}}
+                </li>
+              </ul>
+          </div>
+      </div>
+    
+
+    
   </div>
 </div>

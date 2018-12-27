@@ -1,4 +1,6 @@
 {
-    "HEADLINE" : "el habed" , 
-    "MESSAGECONTENT" : "Hello from the other side"
+    "HEADLINE" : "Welcome bro" , 
+    "MESSAGECONTENT" : "Hello from the other side",
+    "ADDUSER" : "Add User",
+    "SHOWALLUSERS" : "Show Users"
 }

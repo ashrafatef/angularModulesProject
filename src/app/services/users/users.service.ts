@@ -33,14 +33,11 @@ export class UsersService {
   constructor(private httpClient : HttpClient ,private authService : UserAuthService) { }
 
   storeUsers(servers:any[]){
-    const token = this.authService.getToken() ;
-
     return this.httpClient.put('https://angular-httpckient.firebaseio.com/data.json',
      servers );
   }
-  getUSers(){
-    const token = this.authService.getToken() ;
-    this.httpClient.get('https://angular-httpckient.firebaseio.com/data.json');
+  getUSers(){  
+    return this.httpClient.get('https://angular-httpckient.firebaseio.com/data.json');
   }
 
 }

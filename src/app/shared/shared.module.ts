@@ -14,19 +14,6 @@ import { AuthInterceptorService } from './auth.interceptor.service';
   declarations: [],
   imports: [
     CommonModule,
-    // TranslateModule.forChild({
- 
-    //   loader: {
-  
-    //     provide: TranslateLoader,
-  
-    //     useFactory: createTranslateLoader,
-  
-    //     deps: [HttpClient]
-  
-    //   }
-  
-    //  })
   ],
   exports : [
     TranslateModule

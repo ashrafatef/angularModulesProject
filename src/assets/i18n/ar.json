@@ -1,4 +1,6 @@
 {
-    "HEADLINE" : "الهبيد" , 
-    "MESSAGECONTENT" : "اهلا من الناحية التانية "
+    "HEADLINE" : "اهلا  وسهلا يا سيدى " , 
+    "MESSAGECONTENT" : "الترجمة العربى للكلام اللى فات  ",
+    "ADDUSER" :"اضف مستخدم",
+    "SHOWALLUSERS" : "اعرض المستخدمين"
 }
